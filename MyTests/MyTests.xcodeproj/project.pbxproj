@@ -14,6 +14,7 @@
 		845F647C24ADACA1006A93F4 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F647424ADACA1006A93F4 /* Tool.m */; };
 		845F647D24ADACA1006A93F4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F647524ADACA1006A93F4 /* Person.m */; };
 		845F647E24ADACA1006A93F4 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845F647824ADACA1006A93F4 /* Test.mm */; };
+		845F648124ADBD77006A93F4 /* NSObject+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F648024ADBD77006A93F4 /* NSObject+Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,8 @@
 		845F647624ADACA1006A93F4 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		845F647724ADACA1006A93F4 /* MJClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJClassInfo.h; sourceTree = "<group>"; };
 		845F647824ADACA1006A93F4 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
+		845F647F24ADBD77006A93F4 /* NSObject+Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Student.h"; sourceTree = "<group>"; };
+		845F648024ADBD77006A93F4 /* NSObject+Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Student.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				845F647824ADACA1006A93F4 /* Test.mm */,
 				845F646F24ADACA1006A93F4 /* Tool.h */,
 				845F647424ADACA1006A93F4 /* Tool.m */,
+				845F647F24ADBD77006A93F4 /* NSObject+Student.h */,
+				845F648024ADBD77006A93F4 /* NSObject+Student.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				845F647C24ADACA1006A93F4 /* Tool.m in Sources */,
 				845F646324ADAC42006A93F4 /* main.m in Sources */,
 				845F647B24ADACA1006A93F4 /* Student+Student.m in Sources */,
+				845F648124ADBD77006A93F4 /* NSObject+Student.m in Sources */,
 				845F647A24ADACA1006A93F4 /* Student.m in Sources */,
 				845F647E24ADACA1006A93F4 /* Test.mm in Sources */,
 			);

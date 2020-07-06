@@ -10,6 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Student (Student)
+- (void)haha;
+
+@property (nonatomic, strong) NSString *categoryName;
 
 @end
 
