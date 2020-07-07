@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+#import "Teacher.h"
+
+typedef void(^VoidBlock)(void);
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,6 +23,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)studentInstanceMethod;
 + (void)studentClassMethod;
+
+@property (nonatomic, strong) VoidBlock block1;
+@property (nonatomic, strong) VoidBlock block2;
+@property (nonatomic, strong) Teacher *teacher;
+
+- (void)test;
+- (void)test2;
+- (void)test3;
+- (void)test4;
++ (void)test5;
 @end
 
 NS_ASSUME_NONNULL_END

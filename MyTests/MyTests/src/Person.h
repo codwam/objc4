@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
     int _weight;
 }
 @property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *name;
+
+- (void)run;
+- (void)print;
 @end
 
 NS_ASSUME_NONNULL_END

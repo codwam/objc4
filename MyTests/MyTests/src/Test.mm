@@ -13,6 +13,7 @@
 #import "Student.h"
 #import "Student+Student.h"
 #import "NSObject+Student.h"
+#import "Teacher.h"
 
 // MARK: - Test1
 @implementation Test (Test1)
@@ -107,8 +108,35 @@ static struct __Test__test1_block_desc_0 {
   void (*dispose)(struct __Test__test1_block_impl_0*);
 } __Test__test1_block_desc_0_DATA = { 0, sizeof(struct __Test__test1_block_impl_0), __Test__test1_block_copy_0, __Test__test1_block_dispose_0};
 
+//
+//struct __Block_byref_obj_0 {
+//  void *__isa;
+//    struct __Block_byref_obj_0 *__forwarding;
+// int __flags;
+// int __size;
+// void (*__Block_byref_id_object_copy)(void*, void*);
+// void (*__Block_byref_id_object_dispose)(void*);
+// NSObject *obj;
+//};
+//
+//static void __Block_byref_id_object_copy_131(void *dst, void *src) {
+// _Block_object_assign((char*)dst + 40, *(void * *) ((char*)src + 40), 131);
+//}
+//static void __Block_byref_id_object_dispose_131(void *src) {
+// _Block_object_dispose(*(void * *) ((char*)src + 40), 131);
+//}
+
 int g_i = 20;
 static int g_i2 = 20;
+
+union {
+    unsigned long year;
+    char month;
+} _unionData;
+
+void c_other() {
+    NSLog(@"%s", __func__);
+}
 
 + (void)testBlock {
     //    int a = 10;
@@ -129,6 +157,67 @@ static int g_i2 = 20;
     ////    block_impl->impl = ((struct __block_impl){block_impl->impl.isa, block_impl->impl.Flags, block_impl->impl.Reserved, (void *)&__Test__test1_block_func_0});
     //    void (*func)() = (void (*)())block_impl->impl.FuncPtr;
     //    (*func)();
+    
+    VoidBlock g_block = ^{
+        NSLog(@"123");
+    };
+    g_block();
+    NSLog(@"%@", g_block);
+
+    int age = 10;
+    int* ref_age = &age;
+    VoidBlock s_block = ^{
+        *ref_age = 20;
+        NSLog(@"%d", *ref_age);
+    };
+    s_block();
+    age = 20;
+
+    VoidBlock m_block;
+    {
+        __weak NSObject *obj = [Student new];
+        NSLog(@"%@", obj);
+        m_block = ^{
+            NSLog(@"%@", obj.description);
+        };
+    }
+    m_block();
+
+//    __attribute__((__blocks__(byref))) struct __Block_byref_obj_0 obj_ref = {(void*)0,(struct __Block_byref_obj_0 *)&obj_ref, 33554432, sizeof(__Block_byref_obj_0), __Block_byref_id_object_copy_131, __Block_byref_id_object_dispose_131, ((NSObject *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("NSObject"), sel_registerName("new"))};
+//    NSLog(@"%zd", sizeof(struct __Block_byref_obj_0));
+
+//    id sc = [m_block superclass];
+//    while (sc) {
+//        NSLog(@"%@", sc);
+//        sc = [sc superclass];
+//    }
+
+//    Student *student = [Student new];
+//    student.teacher = [Teacher new];
+//    [student test];
+
+//    #define fastpath(x) (__builtin_expect(bool(x), 1))
+//    #define slowpath(x) (__builtin_expect(bool(x), 0))
+//
+//    BOOL ret = fastpath(1);
+//    slowpath(1);
+
+//    NSLog(@"%zd", sizeof(_unionData));
+//    _unionData.year = 11;
+//    char month = _unionData.month;
+
+    Student *student = [Student new];
+    [student test];
+    [student test2];
+    [student test3];
+    [student test4];
+    [student test2];
+
+    [student test2];
+    [Student test5];
+    
+//    Student *student = [Student new];
+//    [student run];
 }
 
 + (void)testKVO {
