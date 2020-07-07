@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)studentInstanceMethod;
 + (void)studentClassMethod;
 
-@property (nonatomic, strong) VoidBlock block1;
+@property (nonatomic, strong, nullable) VoidBlock block1;
 @property (nonatomic, strong) VoidBlock block2;
 @property (nonatomic, strong) Teacher *teacher;
 

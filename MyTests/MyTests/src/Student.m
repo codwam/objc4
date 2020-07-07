@@ -31,28 +31,42 @@
 //    NSLog(@"%s", __func__);
 //}
 
-+ (void)initialize
-{
-    NSLog(@"%s", __func__);
-}
+//+ (void)initialize
+//{
+//    NSLog(@"%s", __func__);
+//}
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        NSLog(@"%@", [self class]);// Student
-        NSLog(@"%@", [self superclass]);// Person
-        NSLog(@"%@", [super class]);// Student
-        NSLog(@"%@", [super superclass]);// Person
+//        NSLog(@"%@", [self class]);// Student
+//        NSLog(@"%@", [self superclass]);// Person
+//        NSLog(@"%@", [super class]);// Student
+//        NSLog(@"%@", [super superclass]);// Person
     }
     return self;
 }
 
+- (VoidBlock)retBlock {
+    int age = 10;
+    int* ref_age = &age;
+    return ^{
+//        *ref_age = 20;
+        NSLog(@"%d", *ref_age);
+    };
+}
+
 - (void)test {
+    VoidBlock retBlock = [self retBlock];
+    NSLog(@"1111");
+    retBlock();
+    
 //    __weak __typeof(self) weak = self;
+    __block Student* blockSelf = self;
     self.block1 = ^{
 //        __strong __typeof(weak) strong = weak;
-        NSLog(@"%@", self);
+        NSLog(@"%@", blockSelf);
 //        strong.block2 = ^{
 //            NSLog(@"%@", strong);
 //        };

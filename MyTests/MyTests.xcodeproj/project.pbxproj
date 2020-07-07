@@ -34,7 +34,6 @@
 		845F645F24ADAC42006A93F4 /* MyTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		845F646224ADAC42006A93F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		845F646A24ADAC7B006A93F4 /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		845F646D24ADACA1006A93F4 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
 		845F646E24ADACA1006A93F4 /* Student+Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+Student.h"; sourceTree = "<group>"; };
 		845F646F24ADACA1006A93F4 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		845F647024ADACA1006A93F4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -110,7 +109,6 @@
 				845F647324ADACA1006A93F4 /* Student+Student.m */,
 				84CCC29D24B473B4009DEA7C /* Teacher.h */,
 				84CCC29E24B473B4009DEA7C /* Teacher.m */,
-				845F646D24ADACA1006A93F4 /* Test.cpp */,
 				845F647624ADACA1006A93F4 /* Test.h */,
 				845F647824ADACA1006A93F4 /* Test.mm */,
 				845F646F24ADACA1006A93F4 /* Tool.h */,

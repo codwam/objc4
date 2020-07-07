@@ -34,10 +34,10 @@
     NSLog(@"%s", __func__);
 }
 
-+ (void)initialize
-{
-    NSLog(@"%s", __func__);
-}
+//+ (void)initialize
+//{
+//    NSLog(@"%s", __func__);
+//}
 
 - (NSString *)categoryName {
     return objc_getAssociatedObject(self, _cmd);

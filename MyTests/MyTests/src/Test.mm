@@ -140,17 +140,17 @@ void c_other() {
 
 + (void)testBlock {
     //    int a = 10;
-        Student *stu = [[Student alloc] init];
-        stu->_height = 10;
-        void (^block)() = ^{
-            NSLog(@"123");
-    //        NSLog(@"%d", a);
-    //        NSLog(@"%d", g_i);
-    //        NSLog(@"%d", g_i2);
-            NSLog(@"%d", stu->_height);
-        };
-        NSLog(@"%p, %@", block, block);
-        block();
+//    Student *stu = [[Student alloc] init];
+//    stu->_height = 10;
+//    void (^block)() = ^{
+//        NSLog(@"123");
+////        NSLog(@"%d", a);
+////        NSLog(@"%d", g_i);
+////        NSLog(@"%d", g_i2);
+//        NSLog(@"%d", stu->_height);
+//    };
+//    NSLog(@"%p, %@", block, block);
+//    block();
         
     //    auto block_impl = ((__bridge __Test__test1_block_impl_0 *)block);
     //    block_impl->impl.FuncPtr = (void *)&__Test__test1_block_func_0;
@@ -158,30 +158,30 @@ void c_other() {
     //    void (*func)() = (void (*)())block_impl->impl.FuncPtr;
     //    (*func)();
     
-    VoidBlock g_block = ^{
-        NSLog(@"123");
-    };
-    g_block();
-    NSLog(@"%@", g_block);
-
-    int age = 10;
-    int* ref_age = &age;
-    VoidBlock s_block = ^{
-        *ref_age = 20;
-        NSLog(@"%d", *ref_age);
-    };
-    s_block();
-    age = 20;
-
-    VoidBlock m_block;
-    {
-        __weak NSObject *obj = [Student new];
-        NSLog(@"%@", obj);
-        m_block = ^{
-            NSLog(@"%@", obj.description);
-        };
-    }
-    m_block();
+//    VoidBlock g_block = ^{
+//        NSLog(@"123");
+//    };
+//    g_block();
+//    NSLog(@"%@", g_block);
+//
+//    int age = 10;
+//    int* ref_age = &age;
+//    VoidBlock s_block = ^{
+//        *ref_age = 20;
+//        NSLog(@"%d", *ref_age);
+//    };
+//    s_block();
+//    age = 20;
+//
+//    VoidBlock m_block;
+//    {
+//        __weak NSObject *obj = [Student new];
+//        NSLog(@"%@", obj);
+//        m_block = ^{
+//            NSLog(@"%@", obj.description);
+//        };
+//    }
+//    m_block();
 
 //    __attribute__((__blocks__(byref))) struct __Block_byref_obj_0 obj_ref = {(void*)0,(struct __Block_byref_obj_0 *)&obj_ref, 33554432, sizeof(__Block_byref_obj_0), __Block_byref_id_object_copy_131, __Block_byref_id_object_dispose_131, ((NSObject *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("NSObject"), sel_registerName("new"))};
 //    NSLog(@"%zd", sizeof(struct __Block_byref_obj_0));
@@ -208,13 +208,14 @@ void c_other() {
 
     Student *student = [Student new];
     [student test];
-    [student test2];
-    [student test3];
-    [student test4];
-    [student test2];
-
-    [student test2];
-    [Student test5];
+    
+//    [student test2];
+//    [student test3];
+//    [student test4];
+//    [student test2];
+//
+//    [student test2];
+//    [Student test5];
     
 //    Student *student = [Student new];
 //    [student run];
