@@ -2,6 +2,7 @@
 //  main.m
 //  MyTests
 //
+<<<<<<< HEAD
 //  Created by hui lee on 2020/7/4.
 //  Copyright © 2020 anonymous. All rights reserved.
 //
@@ -249,6 +250,14 @@ union {
     [self test1];
 }
 @end
+=======
+//  Created by Admin on 2020/7/2.
+//  Copyright © 2020 Admin. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "Test.h"
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {

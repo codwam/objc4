@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		6822A1C424B05C8A00D92241 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6822A1C324B05C8A00D92241 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6822A1BE24B05C8A00D92241 /* CopyFiles */ = {
+=======
+		845F646324ADAC42006A93F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F646224ADAC42006A93F4 /* main.m */; };
+		845F646B24ADAC7B006A93F4 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 845F646A24ADAC7B006A93F4 /* libobjc.A.dylib */; };
+		845F647A24ADACA1006A93F4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F647124ADACA1006A93F4 /* Student.m */; };
+		845F647B24ADACA1006A93F4 /* Student+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F647324ADACA1006A93F4 /* Student+Student.m */; };
+		845F647C24ADACA1006A93F4 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F647424ADACA1006A93F4 /* Tool.m */; };
+		845F647D24ADACA1006A93F4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F647524ADACA1006A93F4 /* Person.m */; };
+		845F647E24ADACA1006A93F4 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845F647824ADACA1006A93F4 /* Test.mm */; };
+		845F648124ADBD77006A93F4 /* NSObject+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F648024ADBD77006A93F4 /* NSObject+Student.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		845F645D24ADAC42006A93F4 /* CopyFiles */ = {
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		6822A1C024B05C8A00D92241 /* MyTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		6822A1C324B05C8A00D92241 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6822A1CA24B0611300D92241 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -33,12 +49,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+=======
+		845F645F24ADAC42006A93F4 /* MyTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		845F646224ADAC42006A93F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		845F646A24ADAC7B006A93F4 /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		845F646D24ADACA1006A93F4 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
+		845F646E24ADACA1006A93F4 /* Student+Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+Student.h"; sourceTree = "<group>"; };
+		845F646F24ADACA1006A93F4 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		845F647024ADACA1006A93F4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		845F647124ADACA1006A93F4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		845F647224ADACA1006A93F4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		845F647324ADACA1006A93F4 /* Student+Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+Student.m"; sourceTree = "<group>"; };
+		845F647424ADACA1006A93F4 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		845F647524ADACA1006A93F4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		845F647624ADACA1006A93F4 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		845F647724ADACA1006A93F4 /* MJClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJClassInfo.h; sourceTree = "<group>"; };
+		845F647824ADACA1006A93F4 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
+		845F647F24ADBD77006A93F4 /* NSObject+Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Student.h"; sourceTree = "<group>"; };
+		845F648024ADBD77006A93F4 /* NSObject+Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Student.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845F645C24ADAC42006A93F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845F646B24ADAC7B006A93F4 /* libobjc.A.dylib in Frameworks */,
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		6822A1B724B05C8A00D92241 = {
 			isa = PBXGroup;
 			children = (
@@ -51,19 +95,43 @@
 			isa = PBXGroup;
 			children = (
 				6822A1C024B05C8A00D92241 /* MyTests */,
+=======
+		845F645624ADAC42006A93F4 = {
+			isa = PBXGroup;
+			children = (
+				845F646124ADAC42006A93F4 /* MyTests */,
+				845F646024ADAC42006A93F4 /* Products */,
+				845F646924ADAC7B006A93F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		845F646024ADAC42006A93F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845F645F24ADAC42006A93F4 /* MyTests */,
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		6822A1C224B05C8A00D92241 /* MyTests */ = {
 			isa = PBXGroup;
 			children = (
 				6822A1C324B05C8A00D92241 /* main.m */,
 				6822A1CA24B0611300D92241 /* main.cpp */,
+=======
+		845F646124ADAC42006A93F4 /* MyTests */ = {
+			isa = PBXGroup;
+			children = (
+				845F646224ADAC42006A93F4 /* main.m */,
+				845F646C24ADAC93006A93F4 /* src */,
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			);
 			path = MyTests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +142,47 @@
 				6822A1BC24B05C8A00D92241 /* Sources */,
 				6822A1BD24B05C8A00D92241 /* Frameworks */,
 				6822A1BE24B05C8A00D92241 /* CopyFiles */,
+=======
+		845F646924ADAC7B006A93F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				845F646A24ADAC7B006A93F4 /* libobjc.A.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		845F646C24ADAC93006A93F4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				845F647724ADACA1006A93F4 /* MJClassInfo.h */,
+				845F647224ADACA1006A93F4 /* Person.h */,
+				845F647524ADACA1006A93F4 /* Person.m */,
+				845F647024ADACA1006A93F4 /* Student.h */,
+				845F647124ADACA1006A93F4 /* Student.m */,
+				845F646E24ADACA1006A93F4 /* Student+Student.h */,
+				845F647324ADACA1006A93F4 /* Student+Student.m */,
+				845F646D24ADACA1006A93F4 /* Test.cpp */,
+				845F647624ADACA1006A93F4 /* Test.h */,
+				845F647824ADACA1006A93F4 /* Test.mm */,
+				845F646F24ADACA1006A93F4 /* Tool.h */,
+				845F647424ADACA1006A93F4 /* Tool.m */,
+				845F647F24ADBD77006A93F4 /* NSObject+Student.h */,
+				845F648024ADBD77006A93F4 /* NSObject+Student.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845F645E24ADAC42006A93F4 /* MyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845F646624ADAC42006A93F4 /* Build configuration list for PBXNativeTarget "MyTests" */;
+			buildPhases = (
+				845F645B24ADAC42006A93F4 /* Sources */,
+				845F645C24ADAC42006A93F4 /* Frameworks */,
+				845F645D24ADAC42006A93F4 /* CopyFiles */,
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			);
 			buildRules = (
 			);
@@ -81,12 +190,17 @@
 			);
 			name = MyTests;
 			productName = MyTests;
+<<<<<<< HEAD
 			productReference = 6822A1C024B05C8A00D92241 /* MyTests */;
+=======
+			productReference = 845F645F24ADAC42006A93F4 /* MyTests */;
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
+<<<<<<< HEAD
 		6822A1B824B05C8A00D92241 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
@@ -99,6 +213,20 @@
 				};
 			};
 			buildConfigurationList = 6822A1BB24B05C8A00D92241 /* Build configuration list for PBXProject "MyTests" */;
+=======
+		845F645724ADAC42006A93F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					845F645E24ADAC42006A93F4 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 845F645A24ADAC42006A93F4 /* Build configuration list for PBXProject "MyTests" */;
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,29 +234,56 @@
 				en,
 				Base,
 			);
+<<<<<<< HEAD
 			mainGroup = 6822A1B724B05C8A00D92241;
 			productRefGroup = 6822A1C124B05C8A00D92241 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6822A1BF24B05C8A00D92241 /* MyTests */,
+=======
+			mainGroup = 845F645624ADAC42006A93F4;
+			productRefGroup = 845F646024ADAC42006A93F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845F645E24ADAC42006A93F4 /* MyTests */,
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		6822A1BC24B05C8A00D92241 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6822A1C424B05C8A00D92241 /* main.m in Sources */,
+=======
+		845F645B24ADAC42006A93F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845F647D24ADACA1006A93F4 /* Person.m in Sources */,
+				845F647C24ADACA1006A93F4 /* Tool.m in Sources */,
+				845F646324ADAC42006A93F4 /* main.m in Sources */,
+				845F647B24ADACA1006A93F4 /* Student+Student.m in Sources */,
+				845F648124ADBD77006A93F4 /* NSObject+Student.m in Sources */,
+				845F647A24ADACA1006A93F4 /* Student.m in Sources */,
+				845F647E24ADACA1006A93F4 /* Test.mm in Sources */,
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		6822A1C524B05C8A00D92241 /* Debug */ = {
+=======
+		845F646424ADAC42006A93F4 /* Debug */ = {
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,7 +341,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		6822A1C624B05C8A00D92241 /* Release */ = {
+=======
+		845F646524ADAC42006A93F4 /* Release */ = {
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +396,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		6822A1C824B05C8A00D92241 /* Debug */ = {
+=======
+		845F646724ADAC42006A93F4 /* Debug */ = {
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -245,7 +408,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		6822A1C924B05C8A00D92241 /* Release */ = {
+=======
+		845F646824ADAC42006A93F4 /* Release */ = {
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -256,25 +423,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		6822A1BB24B05C8A00D92241 /* Build configuration list for PBXProject "MyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6822A1C524B05C8A00D92241 /* Debug */,
 				6822A1C624B05C8A00D92241 /* Release */,
+=======
+		845F645A24ADAC42006A93F4 /* Build configuration list for PBXProject "MyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845F646424ADAC42006A93F4 /* Debug */,
+				845F646524ADAC42006A93F4 /* Release */,
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		6822A1C724B05C8A00D92241 /* Build configuration list for PBXNativeTarget "MyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6822A1C824B05C8A00D92241 /* Debug */,
 				6822A1C924B05C8A00D92241 /* Release */,
+=======
+		845F646624ADAC42006A93F4 /* Build configuration list for PBXNativeTarget "MyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845F646724ADAC42006A93F4 /* Debug */,
+				845F646824ADAC42006A93F4 /* Release */,
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
+<<<<<<< HEAD
 	rootObject = 6822A1B824B05C8A00D92241 /* Project object */;
+=======
+	rootObject = 845F645724ADAC42006A93F4 /* Project object */;
+>>>>>>> 4f9552190439b57301d27f97fbb7f83c48d0e9e3
 }

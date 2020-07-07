@@ -1530,7 +1530,7 @@ struct objc_class : objc_object {
 
     bool isMetaClass() {
         ASSERT(this);
-        ASSERT(isRealized());
+//        ASSERT(isRealized());
 #if FAST_CACHE_META
         return cache.getBit(FAST_CACHE_META);
 #else
