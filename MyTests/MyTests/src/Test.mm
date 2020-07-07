@@ -20,6 +20,51 @@ struct NSObject_IMPL {
     Class isa;
 };
 
++ (void)testSize {
+    NSObject *obj = [[NSObject alloc] init];
+    NSLog(@"%zd", class_getInstanceSize([obj class]));
+    NSLog(@"%zd", class_getInstanceSize([NSObject class]));
+    NSLog(@"%zd", malloc_size((__bridge void *)obj));
+    struct NSObject_IMPL *impl = (__bridge struct NSObject_IMPL *)(obj);
+}
+
++ (void)testClass {
+    Student *stu = [Student new];
+    stu->_no = 10;
+    stu->_height = 11;
+
+    struct mj_objc_object *stuObject = (__bridge struct mj_objc_object *)stu;
+    struct mj_objc_class *stuClass = (__bridge struct mj_objc_class *)[Student class];
+    struct mj_objc_class *stuMetaClass = (__bridge struct mj_objc_class *)object_getClass([Student class]);
+
+    class_rw_t* stuClassData = stuClass->data();
+    class_rw_t* stuMetaClassData = stuMetaClass->data();
+
+    NSString *name = @"1";
+    stu.name = name;
+    stu.name = @"2";
+    [Student studentClassMethod];
+//    [Student personClassMethod];
+}
+
++ (void)testKVC {
+    Student *stu = [Student new];
+    [stu setValue:@100 forKey:@"no"];
+}
+
++ (void)testCategory {
+    Student *stu = [[Student alloc] init];
+    [stu haha];
+}
+
++ (void)testAsso {
+    Student *stu = [[Student alloc] init];
+    [stu setValue:@"111" forKeyPath:@"categoryName"];
+    stu.categoryName = @"123";
+    auto categoryName = stu.categoryName;
+    NSLog(@"%@", categoryName);
+}
+
 struct __block_impl {
   void *isa;
   int Flags;
@@ -65,68 +110,47 @@ static struct __Test__test1_block_desc_0 {
 int g_i = 20;
 static int g_i2 = 20;
 
++ (void)testBlock {
+    //    int a = 10;
+        Student *stu = [[Student alloc] init];
+        stu->_height = 10;
+        void (^block)() = ^{
+            NSLog(@"123");
+    //        NSLog(@"%d", a);
+    //        NSLog(@"%d", g_i);
+    //        NSLog(@"%d", g_i2);
+            NSLog(@"%d", stu->_height);
+        };
+        NSLog(@"%p, %@", block, block);
+        block();
+        
+    //    auto block_impl = ((__bridge __Test__test1_block_impl_0 *)block);
+    //    block_impl->impl.FuncPtr = (void *)&__Test__test1_block_func_0;
+    ////    block_impl->impl = ((struct __block_impl){block_impl->impl.isa, block_impl->impl.Flags, block_impl->impl.Reserved, (void *)&__Test__test1_block_func_0});
+    //    void (*func)() = (void (*)())block_impl->impl.FuncPtr;
+    //    (*func)();
+}
+
++ (void)testKVO {
+    //    Student *stu = [[Student alloc] init];
+    //    struct mj_objc_class *stuObj = (__bridge struct mj_objc_class *)object_getClass(stu);
+    //    [NSObject printMethods:[stu class]];
+    //    [stu addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    //    stu.name = @"123";
+    //    [NSObject printMethods:object_getClass(stu)];
+    //    stuObj = (__bridge struct mj_objc_class *)object_getClass(stu);
+    //    auto data = stuObj->data();
+    //    [stu removeObserver:self forKeyPath:@"name"];
+    //    [NSObject printMethods:[stu class]];
+}
+
 + (void)test1 {
-//    NSObject *obj = [[NSObject alloc] init];
-//    NSLog(@"%zd", class_getInstanceSize([obj class]));
-//    NSLog(@"%zd", class_getInstanceSize([NSObject class]));
-//    NSLog(@"%zd", malloc_size((__bridge void *)obj));
-//    struct NSObject_IMPL *impl = (__bridge struct NSObject_IMPL *)(obj);
-    
-//    Student *stu = [Student new];
-//    stu->_no = 10;
-//    stu->_height = 11;
-//
-//    struct mj_objc_object *stuObject = (__bridge struct mj_objc_object *)stu;
-//    struct mj_objc_class *stuClass = (__bridge struct mj_objc_class *)[Student class];
-//    struct mj_objc_class *stuMetaClass = (__bridge struct mj_objc_class *)object_getClass([Student class]);
-//
-//    class_rw_t* stuClassData = stuClass->data();
-//    class_rw_t* stuMetaClassData = stuMetaClass->data();
-//
-//    NSString *name = @"1";
-//    stu.name = name;
-//    stu.name = @"2";
-//    [Student studentClassMethod];
-//    [Student personClassMethod];
-    
-//    Student *stu = [[Student alloc] init];
-//    struct mj_objc_class *stuObj = (__bridge struct mj_objc_class *)object_getClass(stu);
-//    [NSObject printMethods:[stu class]];
-//    [stu addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
-//    stu.name = @"123";
-//    [NSObject printMethods:object_getClass(stu)];
-//    stuObj = (__bridge struct mj_objc_class *)object_getClass(stu);
-//    auto data = stuObj->data();
-//    [stu removeObserver:self forKeyPath:@"name"];
-//    [NSObject printMethods:[stu class]];
-    
-//    Student *stu = [[Student alloc] init];
-////    [stu setValue:@"111" forKeyPath:@"name2"];
-//    stu.categoryName = @"123";
-//    auto categoryName = stu.categoryName;
-//    [stu studentInstanceMethod];
-//
-////    NSObject *obj = [[NSObject alloc] init];
-////    [obj studentTest];
-    
-//    int a = 10;
-    Student *stu = [[Student alloc] init];
-    stu->_height = 10;
-    void (^block)() = ^{
-        NSLog(@"123");
-//        NSLog(@"%d", a);
-//        NSLog(@"%d", g_i);
-//        NSLog(@"%d", g_i2);
-        NSLog(@"%d", stu->_height);
-    };
-    NSLog(@"%p, %@", block, block);
-    block();
-    
-//    auto block_impl = ((__bridge __Test__test1_block_impl_0 *)block);
-//    block_impl->impl.FuncPtr = (void *)&__Test__test1_block_func_0;
-////    block_impl->impl = ((struct __block_impl){block_impl->impl.isa, block_impl->impl.Flags, block_impl->impl.Reserved, (void *)&__Test__test1_block_func_0});
-//    void (*func)() = (void (*)())block_impl->impl.FuncPtr;
-//    (*func)();
+//    [self testSize];
+//    [self testClass];
+//    [self testKVC];
+//    [self testCategory];
+//    [self testAsso];
+    [self testBlock];
 }
 @end
 

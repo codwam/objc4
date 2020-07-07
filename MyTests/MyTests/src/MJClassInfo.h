@@ -48,6 +48,16 @@ struct method_t {
 
 struct method_list_t : entsize_list_tt {
     method_t first;
+    
+    void print() {
+//        for (auto mlists = beginLists(),
+//                  end = endLists();
+//             mlists != end;
+//             ++mlists)
+//        {
+////            method_t *m = search_method_list_inline(*mlists, sel);
+//        }
+    }
 };
 
 struct ivar_t {

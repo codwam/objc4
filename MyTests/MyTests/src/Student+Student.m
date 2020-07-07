@@ -31,7 +31,7 @@
 }
 
 - (void)haha {
-    
+    NSLog(@"%s", __func__);
 }
 
 + (void)initialize

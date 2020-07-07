@@ -25,10 +25,10 @@
     return [Student allocWithZone:zone];
 }
 
-+ (void)load
-{
-    NSLog(@"%s", __func__);
-}
+//+ (void)load
+//{
+//    NSLog(@"%s", __func__);
+//}
 
 + (void)initialize
 {

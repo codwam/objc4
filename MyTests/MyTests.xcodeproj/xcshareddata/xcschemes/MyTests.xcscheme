@@ -54,7 +54,7 @@
          <EnvironmentVariable
             key = "OBJC_PRINT_IMAGES"
             value = "YES"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "OBJC_PRINT_IMAGE_TIMES"
